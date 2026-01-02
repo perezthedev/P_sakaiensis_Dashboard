@@ -31,6 +31,7 @@
                 align-items: center;
                 gap: 20px;
                 flex-shrink: 0;
+                flex-wrap: wrap;  /* Allow wrapping for smaller screens */
             }
             h1 {
                 margin: 0;
@@ -58,6 +59,30 @@
                 background: #4CAF50;
                 color: white;
                 border-color: #4CAF50;
+            }
+            .data-links {
+                display: flex;
+                gap: 15px;
+                font-size: 12px;
+                align-items: center;
+            }
+            .data-links::before {
+                content: "📊 Data Files:";
+                font-weight: bold;
+                color: #666;
+                margin-right: 5px;
+            }
+            .data-links a {
+                color: #1976D2;
+                text-decoration: none;
+                padding: 4px 8px;
+                border-radius: 3px;
+                transition: background-color 0.3s;
+                white-space: nowrap;
+            }
+            .data-links a:hover {
+                background-color: #e3f2fd;
+                text-decoration: underline;
             }
             .iframe-container {
                 flex: 1;
@@ -89,6 +114,11 @@
                     <button class="tab-button" onclick="switchView('contig')">
                         Linear Contig View
                     </button>
+                </div>
+                <div class="data-links">
+                    <a href="photosynthesis_genes_all.csv" download>All Genes</a>
+                    <a href="photosynthesis_genes_unique.csv" download>Unique Genes</a>
+                    <a href="visualization_summary.json" download>Summary</a>
                 </div>
             </div>
             
