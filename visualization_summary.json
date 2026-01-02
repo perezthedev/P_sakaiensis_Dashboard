@@ -1,0 +1,24 @@
+{
+  "genome_stats": {
+    "total_contigs": 224,
+    "total_length": 5673728,
+    "total_genes": 261
+  },
+  "category_distribution": {
+    "electron_transport_I": 161,
+    "tetrapyrrole_biosynthesis_II": 34,
+    "carbon_fixation_and_CBB_associated_I": 26,
+    "regulatory_II": 13,
+    "carotenoid_biosynthesis_II": 9,
+    "bacteriochlorophyll_biosynthesis_II": 6,
+    "reaction_center_I": 4,
+    "antenna_assembly_accessory_II": 4,
+    "terminal_oxidase_II": 2,
+    "light_harvesting_I": 2
+  },
+  "contig_distribution": {
+    "contigs_with_photo_genes": 58,
+    "max_genes_per_contig": 40,
+    "mean_genes_per_contig": 4.5
+  }
+}
